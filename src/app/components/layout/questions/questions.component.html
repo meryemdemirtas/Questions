@@ -1,0 +1,38 @@
+
+  <h1 style="text-align: center; font-family: sans-serif;">Sık Sorulan Sorular</h1>
+<div class="container">
+
+
+  <div class="css-toggle" *ngFor="let question of questions" >
+    <div class="flex-contaniner"
+     [style.background-color]="question.Color"
+       [style.Color]="question.fontsize">
+   
+      <div class="flex" (click)="toggle(question)"  >
+        {{question.soru}} 
+
+    </div>
+
+      <div class="arrow">
+        <div *ngIf="!question.display" (click)="toggle(question)">
+          <i class="fa fa-arrow-down"></i>
+
+        </div>
+        <div *ngIf="question.display" (click)="toggle(question)">
+
+          <i class="fa fa-arrow-up"></i>
+
+        </div>
+      </div>
+    </div>
+    <div *ngIf="question.display" (click)="toggle(question)" >
+      {{question.yanit}}
+    </div>
+   
+  </div>
+  <button pButton type="button" class="p-button-raised p-button-rounded" (click)="showDialog()">Ekle</button>
+<button pButton type="button" class="p-button-raised p-button-rounded" (click)="remove()" >Çıkart</button>
+  <app-qusetionadd  [(display)]="addVisible" (onSave)="doSave($event)" ></app-qusetionadd>
+</div>
+
+  

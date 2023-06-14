@@ -1,0 +1,36 @@
+.header{
+    background-color:#1D428A;
+    width: 100%;
+    min-height: 40px;
+    height: auto;
+    padding: 10px 0;
+    background-image: url(/images/banner.jpg);
+    background-size: cover;
+    background-position: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header2 {
+    display: flex;
+    align-items: center;
+}
+
+img{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 40px;
+    background-color: white;
+    margin-left: 1%;
+  
+}
+
+.icon{
+ 
+    width: 3%;
+    height: 20%;
+    padding: 10px;
+}

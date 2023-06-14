@@ -1,0 +1,20 @@
+<p-dialog header="Soru Ekleyiniz" [(visible)]="display" [modal]="true" [style]="{width: '50vw'}" (onShow)="doShow()"
+  (onHide)="doHide()">
+  <div class="input-calss" >
+
+    <input type="text" pInputText [(ngModel)]="objectadd.soru" ngModel /><br><br>
+    <textarea rows="5" cols="22" [(ngModel)]="objectadd.yanit" pInputTextarea ngModel></textarea>
+  </div>
+  <div>
+
+
+
+  </div>
+  <div class="flex">
+    <button pButton type="button" class="p-button-raised p-button-rounded" (click)="saveDialog()">save</button>
+    <button pButton type="button" class="p-button-raised p-button-rounded" (click)="closeDialog()">İptal</button>
+  </div>
+  <br>
+
+
+</p-dialog>

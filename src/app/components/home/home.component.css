@@ -1,0 +1,16 @@
+img{
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    background-size: cover;
+    background-position: 100%;
+    display: flex;
+}
+.form{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}

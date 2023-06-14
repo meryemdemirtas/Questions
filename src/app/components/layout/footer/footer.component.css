@@ -1,0 +1,44 @@
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding-top: 75px;
+}
+
+
+.footer_logo {
+    margin-bottom: 45px;
+    align-self: center;
+    
+}
+
+.footer_bar{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background-color: #1565c0;
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.footer_art {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.footer_people {
+    align-self: center;
+    position: relative;
+    bottom: -185px;
+
+}
